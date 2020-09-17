@@ -89,4 +89,4 @@ export default class Projects extends Component {
 }
 
 
-// Testing for heroku main
+// Deleted the yarn.lock
