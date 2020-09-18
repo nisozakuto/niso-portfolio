@@ -1,3 +1,74 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="submit"],
+input[type=password],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    cursor: pointer;
+    color: black;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* RESET ENDS */
+
 html {
   height: 100%;
 }
@@ -14,7 +85,6 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 /* MAIN START */
 main{
   display: flex;
@@ -23,7 +93,6 @@ main{
   flex-direction: column;
   justify-content: space-between;
 }
-
 /* MAIN END */
 
 p{
@@ -32,7 +101,8 @@ p{
 }
 
 header{
-  background-color:rgb(132 190 172);
+  background-color: #be8e84;
+  color: white;
  }
 
  .logo-text{
@@ -54,11 +124,15 @@ header{
   justify-content: space-evenly;
   align-items: center;
   width: 50vw;
-  
  }
  nav ul li:hover{
-cursor: pointer;
-background-color:#F9F7E8;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 100%;
+    cursor: pointer;
+    background-color: #f9f7e8 ;
+    color: rgb(132	190	172	);
  }
 header ul{
   list-style: none;
@@ -117,6 +191,7 @@ margin-bottom: 20px;
 }
 footer{
   border-top:2px solid rgb(132	190	172	);
+  background-color: rgb(132	190	172	);
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -137,9 +212,9 @@ section h1{
 
 .single-project{
   cursor: pointer;
-  border: solid 1px #f2f2f2;
+  border: solid 1px #be8e84;
   padding: 15px;
-  background-color: rgb(88	128	115	);
+  background-color: #52a58b;
   color: #FFF;
   font-family: verdana;
 }
