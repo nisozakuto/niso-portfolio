@@ -38,6 +38,8 @@ export default class Projects extends Component {
                             <h1>Home</h1>
                             <h3>About me</h3>
                             <p>
+                                Recently, I finished studying 800+ hours of bootcamp education at the General Assembly. I expanded my Javascript skills and started using it for the backend as Node JS. Later, I learned React JS and built my very first full stack project and deployed it to Heroku.
+
                             </p>
                         </section>
                         :
