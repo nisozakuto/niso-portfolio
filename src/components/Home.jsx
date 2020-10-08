@@ -40,6 +40,10 @@ export default class Projects extends Component {
                             <p>
                                 Recently, I finished studying 800+ hours of bootcamp education at the General Assembly. I expanded my Javascript skills and started using it for the backend as Node JS. Later, I learned React JS and built my very first full stack project and deployed it to Heroku.
 
+                                In my last unit at the bootcamp, I left my comfort zone and started learning Ruby on Rails. After studying and learning JS heavily, I used Ruby on Rails for the backend of my fourth project.
+
+                                I really enjoyed learning new things facing challenges and overcoming the problems I was having. Building something from scratch, continuing from some else's work or finding solutions for problems as a team gives me tremendous pleasure. I am open to discuss my background more in detail and chat further. Please reach out to me, nisozakuto@gmail.com
+
                             </p>
                         </section>
                         :
