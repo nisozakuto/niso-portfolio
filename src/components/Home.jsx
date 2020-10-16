@@ -8,28 +8,26 @@ export default class Projects extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            Blackjack_info: 'Blackjack game built with Javascript',
-            Photobook_info: "Photobook app, connecting clients with the Photographers. Client's photographer will send you the pictures through this application.Client will be able to go into the brand new album, browse through the old albums, like, delete the photos that they like.",
-            Movie_info: 'This was my first team work project using Node JS and React JS. I had a lot fun working in a 3 people team and dividing different tasks. Coming over from the complications together gives me an idea what working in a team and building project would look like.',
-            ProjectIV_info: 'My 4th project is a Coffee Shop application, Ruby on Rails in the backend and React in the front end.',
-            Portfolio_info: 'You are viewing right now :)'
+            // Blackjack_info: 'Blackjack game built with Javascript',
+            // Photobook_info: "Photobook app, connecting clients with the Photographers. Client's photographer will send you the pictures through this application.Client will be able to go into the brand new album, browse through the old albums, like, delete the photos that they like.",
+            // Movie_info: 'This was my first team work project using Node JS and React JS. I had a lot fun working in a 3 people team and dividing different tasks. Coming over from the complications together gives me an idea what working in a team and building project would look like.',
+            // ProjectIV_info: 'My 4th project is a Coffee Shop application, Ruby on Rails in the backend and React in the front end.',
+            // Portfolio_info: 'You are viewing right now :)'
         }
     }
     render() {
         return (
-            <main>
+            <main className="home-page">
                 {(this.props.currentPage === 'Home') ?
-                    <section className="homePage">
+                    <section className="home-page-section">
                         <article>
-                            <h2>Hello you!</h2>
-                            <h2>My name is Niso. </h2>
-                            <h3>Software Engineer | Web developer</h3>
-                            <h3>Looking for a solution? <span className="span-color"> I am a great problem solver</span></h3>
+                            <h1>Hello!</h1>
+                            <h2>My name is Niso.</h2>
+                            <h3>I am a full stack Software Engineer and Web developer</h3>
                         </article>
-                        <aside>
-                            <p>I am currently working on my <code><em>React JS</em></code>, <code><em>Node JS</em></code> and <code><em>Ruby on Rails</em></code>.</p>
-                            <p> </p>
-                        </aside>
+
+                        <article>
+                        </article>
                     </section>
                     :
                     (this.props.currentPage === 'About') ?
@@ -40,21 +38,27 @@ export default class Projects extends Component {
                                 Recently, I finished studying 800+ hours of bootcamp education at the General Assembly. I expanded my Javascript skills and started using it for the backend as Node JS. Later, I learned React JS and built my very first full stack project and deployed it to Heroku.
 
                                 In my last unit at the bootcamp, I left my comfort zone and started learning Ruby on Rails. After studying and learning JS heavily, I used Ruby on Rails for the backend of my fourth project.
-
                                 I really enjoyed learning new things facing challenges and overcoming the problems I was having. Building something from scratch, continuing from some else's work or finding solutions for problems as a team gives me tremendous pleasure. I am open to discuss my background more in detail and chat further. Please reach out to me, nisozakuto@gmail.com
 
                             </p>
                         </section>
                         :
                         (this.props.currentPage === 'Projects') ?
-                            <section>
+                            <section className="projects-section">
                                 <h1>Projects</h1>
-                                <ul>
-                                    <Collapsible title={"Blackjack"} children={this.state.Blackjack_info} />
-                                    <Collapsible title={"Photobook"} children={this.state.Photobook_info} />
-                                    <Collapsible title={"Movie - Series Database"} children={this.state.Movie_info} />
-                                    <Collapsible title={"Project IV"} children={this.state.ProjectIV_info} />
-                                    <Collapsible title={"Portfolio Project"} children={this.state.Portfolio_info} />
+                                <ul className="projects-ul">
+                                    <div className="project-box">
+                                        Test
+                                    </div>
+                                    <div className="project-box">
+                                        Test
+                                    </div>
+                                    <div className="project-box">
+                                        Test
+                                    </div>
+                                    <div className="project-box">
+                                        Test
+                                    </div>
                                 </ul>
                             </section>
                             :

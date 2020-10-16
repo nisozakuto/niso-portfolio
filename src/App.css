@@ -74,8 +74,8 @@ html {
 }
 
 body{
-  background-color: #F9F7E8;
-  color: #333;
+  background-color: rgb(26	,28	,48	);
+  color: rgb(131,	116,	66	);
 }
 
 .App{
@@ -90,10 +90,25 @@ main{
   display: flex;
   flex-grow: 1;
   margin: 0 10vw;
-  flex-direction: column;
-  justify-content: space-between;
 }
 /* MAIN END */
+
+.home-page{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.home-page-section{
+/* display: flex;
+flex-direction: row;
+flex-grow: 1;
+justify-content: center */
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 p{
   font-size:1.3em;
@@ -135,17 +150,21 @@ header{
     background-color: #f9f7e8 ;
     color: rgb(132	190	172	);
  }
+
 header ul{
   list-style: none;
 }
 
 header  li{
-  
 text-transform: uppercase;
 }
 
 h1{
-  color: rgb(132	190	172	);
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.6em;
 }
 
 /* HOME START */
@@ -158,6 +177,7 @@ h1{
   line-height: 1.5em;
   letter-spacing: 1px;
 }
+
 .homePage{
   display: flex;
   flex-grow: 1;
@@ -165,11 +185,21 @@ h1{
 }
 
 section aside {
+flex-grow: 2;
 display: flex;
-flex-direction: row;
 justify-content: center;
+flex-direction: column;
+}
+
+section article {
+  flex-grow: 3;
+display: flex;
+flex-direction: column;
+justify-content: inherit;
 flex-wrap: wrap;
 }
+
+
 
 .box{
   min-height: 250px;
@@ -203,13 +233,16 @@ section{
  flex-direction: column;
 }
 
-section h1{
-
+/* section h1{
   text-align:center;
   text-decoration: underline;
+} */
 
-}
 
+.projects-ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;}
 
 .single-project{
   cursor: pointer;
@@ -220,6 +253,20 @@ section h1{
   font-family: verdana;
 }
 
+.projects-section{
+  width: 100%;
+  background-color: rgb(0, 0, 0,0.1);
+}
+.projects-section h1{
+  text-align: center;
+}
+
+.project-box{
+  height: 500px;
+  width: 500px;
+  background-color: lavender;
+  margin:10px;
+}
 .content{
   cursor: pointer;
   border-left: solid 1px #f2f2f2;
@@ -270,4 +317,9 @@ section h1{
 
   nav ul  {
     width: 90vw;    
-   }}
+   }
+  
+  .home-page-section{
+    flex-direction: column;
+  }
+  }
