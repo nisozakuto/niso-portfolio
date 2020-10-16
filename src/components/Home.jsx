@@ -62,8 +62,9 @@ export default class Projects extends Component {
                                                 <li>- Will change the turn to the dealer.</li>
                                                 <li>- Dealer has to hit as long as, they have less than 16 in number values.</li>
                                             </ul>
-
                                         </article>
+                                        <p>Github page: <a href="https://github.com/nisozakuto/Blackjack" target="_blank">github.com/nisozakuto/Blackjack</a></p>
+                                        <p>Visit page: <a href="https://nisozakuto.github.io/Blackjack/" target="_blank"> nisozakuto.github.io/blackjack/</a></p>
                                     </div>
                                     <div className="project-box">
                                         <img src={photobook} width="500px" />
@@ -72,14 +73,23 @@ export default class Projects extends Component {
                                             Photobook app is created to help photographers to post their albums and share them with their clients.
                                             Currently, the app is letting visitors to sign up, login, create albums based on the keywords that are available and browse between pictures.
                                         </article>
+                                        <p>Github page: <a href="https://github.com/nisozakuto/ThePhotobook" target="_blank">github.com/nisozakuto/ThePhotobook</a></p>
+                                        <p>Visit page: <a href="https://thephotobook.herokuapp.com/" target="_blank">thephotobook.herokuapp.com</a></p>
+
                                     </div>
                                     <div className="project-box">
                                         <img src={msnmtdb} width="500px" />
                                         <h3>Movie TV Database App</h3>
+                                        <p>Github page: <a href="https://github.com/nisozakuto/MSN-MTDB" target="_blank">github.com/nisozakuto/MSN-MTDB</a></p>
+                                        <p>Visit page: <a href="https://evening-basin-19807.herokuapp.com/" target="_blank"> Staging Page</a></p>
+
                                     </div>
                                     <div className="project-box">
                                         <img src={coffeeapp} width="500px" />
                                         <h3>Reactive Coffee</h3>
+                                        <p>Github page: <a href="https://github.com/nisozakuto/ReactiveCoffee" target="_blank">github.com/nisozakuto/ReactiveCoffee</a></p>
+                                        <p>Visit page: <a href="https://reactive-coffee-staging.herokuapp.com/" target="_blank">Reactive Coffee</a></p>
+
                                     </div>
                                 </ul>
                             </section>

@@ -212,6 +212,7 @@ section article {
 .ul-items{
 margin-bottom: 20px;
 }
+
 /* HOME ENDS */
 .center{
   display: flex;
@@ -265,12 +266,22 @@ justify-content: center;}
   background-color: lavender;
   margin:10px;
   color:black;
+  overflow: hidden;
 }
+
+.project-box img{
+  transition: transform .2s;
+}
+
+
 .project-box h3{
   margin-top:1em;
   text-align: center;
 }
 
+.project-box img:hover {
+  transform: scale(1.1); 
+}
 
 .content{
   cursor: pointer;
