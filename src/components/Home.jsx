@@ -3,6 +3,10 @@ import Collapsible from '../components/Collapsible'
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaRegEnvelope } from "react-icons/fa"
+import blackjack from '../assets/blackjack.png'
+import photobook from '../assets/photobook.png'
+import msnmtdb from '../assets/msnmtdb.png'
+import coffeeapp from '../assets/coffeeapp.png'
 
 export default class Projects extends Component {
     constructor(props) {
@@ -21,8 +25,7 @@ export default class Projects extends Component {
                 {(this.props.currentPage === 'Home') ?
                     <section className="home-page-section">
                         <article>
-                            <h1>Hello!</h1>
-                            <h2>My name is Niso.</h2>
+                            <h1>Hello! My name is <span>Niso.</span></h1>
                             <h3>I am a full stack Software Engineer and Web developer</h3>
                         </article>
 
@@ -36,7 +39,6 @@ export default class Projects extends Component {
                             <h3>About me</h3>
                             <p>
                                 Recently, I finished studying 800+ hours of bootcamp education at the General Assembly. I expanded my Javascript skills and started using it for the backend as Node JS. Later, I learned React JS and built my very first full stack project and deployed it to Heroku.
-
                                 In my last unit at the bootcamp, I left my comfort zone and started learning Ruby on Rails. After studying and learning JS heavily, I used Ruby on Rails for the backend of my fourth project.
                                 I really enjoyed learning new things facing challenges and overcoming the problems I was having. Building something from scratch, continuing from some else's work or finding solutions for problems as a team gives me tremendous pleasure. I am open to discuss my background more in detail and chat further. Please reach out to me, nisozakuto@gmail.com
 
@@ -48,40 +50,59 @@ export default class Projects extends Component {
                                 <h1>Projects</h1>
                                 <ul className="projects-ul">
                                     <div className="project-box">
-                                        Test
+                                        <img src={blackjack} width="500px" />
+                                        <h3>Blackjack game</h3>
+                                        <article>
+                                            A card game built with Javascript only. Some of the instructions as follows :
+                                            <ul>
+                                                <li>- First you need to let the game know that you are starting the game</li>
+                                                <li>- Each game, initally, player puts $10 in order to play. Player has to bet before the cards are dealt. It is not possible to bet once you hit a card</li>
+                                                <li>- Which takes us to Hit / Stand stage:</li>
+                                                <li>- Hit will give you another random card from the deck.</li>
+                                                <li>- Will change the turn to the dealer.</li>
+                                                <li>- Dealer has to hit as long as, they have less than 16 in number values.</li>
+                                            </ul>
+
+                                        </article>
                                     </div>
                                     <div className="project-box">
-                                        Test
+                                        <img src={photobook} width="500px" />
+                                        <h3>Photobook App</h3>
+                                        <article>
+                                            Photobook app is created to help photographers to post their albums and share them with their clients.
+                                            Currently, the app is letting visitors to sign up, login, create albums based on the keywords that are available and browse between pictures.
+                                        </article>
                                     </div>
                                     <div className="project-box">
-                                        Test
+                                        <img src={msnmtdb} width="500px" />
+                                        <h3>Movie TV Database App</h3>
                                     </div>
                                     <div className="project-box">
-                                        Test
+                                        <img src={coffeeapp} width="500px" />
+                                        <h3>Reactive Coffee</h3>
                                     </div>
                                 </ul>
                             </section>
                             :
                             (this.props.currentPage === 'Contact') ?
-                                <div>
+                                <section className="home-page-section">
                                     <h1 className="center">Contact</h1>
                                     <section className="contact">
                                         <article>
                                             <h3>Choose one of the options to get in touch </h3>
-                                            <ul>
-                                                <li><FaLinkedin /> <a target="_blank" href="https://www.linkedin.com/in/nisozakuto">LinkedIn</a></li>
-                                                <li><FaRegEnvelope /> <a target="_blank" href="mailto:nisozakuto@gmail.com">Email</a></li>
+                                            <ul className="contact-ul">
+                                                <h3><FaLinkedin /> <a target="_blank" href="https://www.linkedin.com/in/nisozakuto">LinkedIn</a></h3>
+                                                <h3><FaRegEnvelope /> <a target="_blank" href="mailto:nisozakuto@gmail.com">Email</a></h3>
                                             </ul>
                                         </article>
                                         <article>
-                                            <h3>or check out my Github profile</h3>
+                                            <h3>Check out my Github profile</h3>
                                             <ul>
-                                                <li><FaGithub /><a target="_blank" href="https://github.com/nisozakuto">Github</a> </li>
+                                                <h3><FaGithub /><a target="_blank" href="https://github.com/nisozakuto">Github</a> </h3>
                                             </ul>
                                         </article>
-
                                     </section>
-                                </div>
+                                </section>
                                 :
                                 <div>na</div>
                 }
