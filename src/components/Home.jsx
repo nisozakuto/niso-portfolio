@@ -64,7 +64,7 @@ export default class Projects extends Component {
                                             </ul>
                                         </article>
                                         <p>Github page: <a href="https://github.com/nisozakuto/Blackjack" target="_blank">github.com/nisozakuto/Blackjack</a></p>
-                                        <p>Visit page: <a href="https://nisozakuto.github.io/Blackjack/" target="_blank"> nisozakuto.github.io/blackjack/</a></p>
+                                        <p>Visit page: <a href="https://nisozakuto.github.io/Blackjack/" target="_blank">Blackjack/</a></p>
                                     </div>
                                     <div className="project-box">
                                         <img src={photobook} width="500px" />
@@ -74,14 +74,14 @@ export default class Projects extends Component {
                                             Currently, the app is letting visitors to sign up, login, create albums based on the keywords that are available and browse between pictures.
                                         </article>
                                         <p>Github page: <a href="https://github.com/nisozakuto/ThePhotobook" target="_blank">github.com/nisozakuto/ThePhotobook</a></p>
-                                        <p>Visit page: <a href="https://thephotobook.herokuapp.com/" target="_blank">thephotobook.herokuapp.com</a></p>
+                                        <p>Visit page: <a href="https://thephotobook.herokuapp.com/" target="_blank">The Photobook</a></p>
 
                                     </div>
                                     <div className="project-box">
                                         <img src={msnmtdb} width="500px" />
                                         <h3>Movie TV Database App</h3>
                                         <p>Github page: <a href="https://github.com/nisozakuto/MSN-MTDB" target="_blank">github.com/nisozakuto/MSN-MTDB</a></p>
-                                        <p>Visit page: <a href="https://evening-basin-19807.herokuapp.com/" target="_blank"> Staging Page</a></p>
+                                        <p>Visit page: <a href="https://evening-basin-19807.herokuapp.com/" target="_blank">Staging Page</a></p>
 
                                     </div>
                                     <div className="project-box">
