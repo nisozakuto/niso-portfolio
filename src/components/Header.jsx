@@ -4,7 +4,7 @@ export default class Header extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            currentPage: this.props.currentPage
+            currentPage: this.props.currentPage,
         }
     }
     render() {
@@ -19,6 +19,7 @@ export default class Header extends Component {
                         <li onClick={() => { this.props.setPage("Projects") }}>Projects</li>
                         <li onClick={() => { this.props.setPage("Contact") }}>Contact</li>
                     </ul>
+                <button onClick={()=> {this.props.themeToggler('dark')}} className="dark-light">Turn the {this.props.theme === 'light' ? "dark" : "light"} mode ON</button>
                 </nav>
             </header>
         )
