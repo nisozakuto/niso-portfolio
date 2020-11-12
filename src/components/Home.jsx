@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Collapsible from '../components/Collapsible'
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaRegEnvelope } from "react-icons/fa"
