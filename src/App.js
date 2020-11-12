@@ -25,8 +25,6 @@ export default class App extends Component {
   };
 
   themeToggler = () => {
-    console.log("aslkdjs");
-    {
       this.state.theme === "light"
         ? this.setState({
             theme: "dark",
@@ -34,7 +32,6 @@ export default class App extends Component {
         : this.setState({
             theme: "light",
           });
-    }
   };
 
   render() {

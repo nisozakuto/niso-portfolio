@@ -351,6 +351,14 @@ section {
   overflow: hidden;
 }
 
+.project-box article{
+padding: 0 10px;
+}
+
+.project-box p{
+  padding: 0 10px;
+  }
+
 .project-box img {
   transition: transform 0.2s;
 }
