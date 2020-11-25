@@ -60,6 +60,7 @@ export default class Projects extends Component {
                             This app was created to serve individuals who need a strong password. The app gives you four different options to create the password.
                     </article>
                         <p>Github page: <a href="https://github.com/nisozakuto/password-generator" target="_blank" rel="noreferrer">github.com/nisozakuto/password-generator</a></p>
+                        <p>Visit Netlify page: <a href="https://z-password-generator.netlify.app" target="_blank" rel="noreferrer">Password Generator</a></p>
                     </div>
                 </ul>
             </section>
