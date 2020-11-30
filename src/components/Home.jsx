@@ -12,9 +12,11 @@ export default class Home extends Component {
             // Portfolio_info: 'You are viewing right now :)'
         }
     }
+    leaveHome = () => {
+    }
     render() {
         return (
-            <main className="home-page">
+            <main className="home-page bg">
                 {(this.props.currentPage === 'Home') ?
                     <section className="home-page-section">
                         <article>
@@ -23,6 +25,7 @@ export default class Home extends Component {
                         </article>
 
                         <article>
+                            <button onClick={() => this.props.setPage("Projects")} className="homepage-button">Learn more</button>
                         </article>
                     </section>
                     :

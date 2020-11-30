@@ -48,7 +48,8 @@ export default class App extends Component {
               themeToggler={this.themeToggler}
               theme={this.state.theme}
             />
-            <Home currentPage={this.state.currentPage} />
+            <Home setPage={this.setPage} currentPage={this.state.currentPage} />
+           
             <Footer />
           </div>
         </>

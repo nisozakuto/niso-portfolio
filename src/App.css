@@ -87,6 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,14 +106,17 @@ section {
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -120,6 +124,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -138,10 +143,12 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-appearance: button; /* for input */
+  -webkit-appearance: button;
+  /* for input */
   cursor: pointer;
   color: black;
 }
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
@@ -172,7 +179,9 @@ main {
   flex-grow: 1;
   margin: 0 10vw;
 }
+
 /* MAIN END */
+
 
 .home-page-section {
   display: flex;
@@ -181,8 +190,24 @@ main {
   flex-grow: 1;
 }
 
+
+.home-page-section article {
+  margin: 25px 0;
+}
+
+.homepage-button {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.homepage-button:hover {
+  background-color: silver;
+}
+
+
 .home-page-section h1 {
   line-height: 1.5em;
+
 }
 
 .home-page-section h2 {
@@ -216,6 +241,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -223,6 +249,7 @@ nav ul {
   align-items: center;
   width: 50vw;
 }
+
 nav ul li:hover {
   display: flex;
   flex-direction: row;
@@ -244,9 +271,11 @@ header li {
 h1 {
   font-size: 2em;
 }
+
 h2 {
   font-size: 1.6em;
 }
+
 h3 {
   font-size: 1.3em;
 }
@@ -256,6 +285,7 @@ h3 {
   margin: 0 auto;
   max-width: 80vw;
 }
+
 .Home p {
   font-size: 1.3em;
   line-height: 1.5em;
@@ -301,6 +331,7 @@ section article {
   display: flex;
   justify-content: center;
 }
+
 footer {
   border-top: 1px solid black;
   background-color: rgb(36 84 38);
@@ -338,6 +369,7 @@ section {
   width: 100%;
   background-color: rgb(0, 0, 0, 0.1);
 }
+
 .projects-section h1 {
   text-align: center;
 }
@@ -351,13 +383,13 @@ section {
   overflow: hidden;
 }
 
-.project-box article{
-padding: 0 10px;
+.project-box article {
+  padding: 0 10px;
 }
 
-.project-box p{
+.project-box p {
   padding: 0 10px;
-  }
+}
 
 .project-box img {
   transition: transform 0.2s;
