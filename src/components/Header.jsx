@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import DarkModeToggle from "react-dark-mode-toggle";
 export default class Header extends Component {
     constructor(props) {
         super(props)
@@ -19,9 +19,12 @@ export default class Header extends Component {
                         <li onClick={() => { this.props.setPage("Projects") }}>Projects</li>
                         <li onClick={() => { this.props.setPage("Contact") }}>Contact</li>
                     </ul>
-                <button onClick={()=> {this.props.themeToggler('dark')}} className="dark-light">Turn the {this.props.theme === 'light' ? "dark" : "light"} mode ON</button>
+                    <DarkModeToggle
+                        onChange={this.props.setIsDarkMode}
+                        checked={this.props.isDarkMode}
+                        size={80} />
                 </nav>
-            </header>
+            </header >
         )
     }
 }

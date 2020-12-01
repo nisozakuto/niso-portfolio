@@ -15,6 +15,7 @@ export default class App extends Component {
     this.state = {
       currentPage: "Home",
       theme: "light",
+      isDarkMode: false,
     };
   }
 
@@ -34,6 +35,18 @@ export default class App extends Component {
           });
   };
 
+  setIsDarkMode = () => {
+    this.state.theme === "light"
+        ? this.setState({
+            theme: "dark",
+            isDarkMode:true
+        })
+        : this.setState({
+            theme: "light",
+            isDarkMode:false
+        });
+}
+
   render() {
     return (
       <ThemeProvider
@@ -47,9 +60,10 @@ export default class App extends Component {
               setPage={this.setPage}
               themeToggler={this.themeToggler}
               theme={this.state.theme}
+              setIsDarkMode={this.setIsDarkMode}
+              isDarkMode={this.state.isDarkMode}
             />
-            <Home setPage={this.setPage} currentPage={this.state.currentPage} />
-           
+            <Home setPage={this.setPage} currentPage={this.state.currentPage} />          
             <Footer />
           </div>
         </>
