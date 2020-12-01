@@ -171,6 +171,21 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-image: url("./assets/almonds.jpg");
+*/
+}
+
+.App::after {
+  content: "";
+  background: url("./assets/almonds.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /* MAIN START */
@@ -181,7 +196,6 @@ main {
 }
 
 /* MAIN END */
-
 
 .home-page-section {
   display: flex;
