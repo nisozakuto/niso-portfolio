@@ -1,5 +1,6 @@
 # Personal Portfolio webpage
-React dark mode toggle button [link](https://github.com/cawfree/react-dark-mode-toggle) 
+
+React dark mode toggle button [link](https://github.com/cawfree/react-dark-mode-toggle)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
