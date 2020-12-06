@@ -24,10 +24,7 @@ export default class Projects extends Component {
             imageSrc={photobook}
             alt="Photobook project made with Express JS"
             title="Photobook App"
-            text=" Photobook app is created to help photographers to post their
-            albums and share them with their clients. Currently, the app is
-            letting visitors to sign up, login, create albums based on the
-            keywords that are available and browse between pictures."
+            text=" Photobook app is created to help photographers to post their albums and share them with their clients. Currently, the app is letting visitors to sign up, login, create albums based on the keywords that are available and browse between pictures."
             githubLink="https://github.com/nisozakuto/ThePhotobook"
             githubLinkA="github.com/nisozakuto/ThePhotobook"
             visitPage="https://thephotobook.herokuapp.com"
