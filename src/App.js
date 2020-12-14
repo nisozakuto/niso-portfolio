@@ -26,26 +26,26 @@ export default class App extends Component {
   };
 
   themeToggler = () => {
-      this.state.theme === "light"
-        ? this.setState({
-            theme: "dark",
-          })
-        : this.setState({
-            theme: "light",
-          });
+    this.state.theme === "light"
+      ? this.setState({
+          theme: "dark",
+        })
+      : this.setState({
+          theme: "light",
+        });
   };
 
   setIsDarkMode = () => {
     this.state.theme === "light"
-        ? this.setState({
-            theme: "dark",
-            isDarkMode:true
+      ? this.setState({
+          theme: "dark",
+          isDarkMode: true,
         })
-        : this.setState({
-            theme: "light",
-            isDarkMode:false
+      : this.setState({
+          theme: "light",
+          isDarkMode: false,
         });
-}
+  };
 
   render() {
     return (
@@ -63,7 +63,7 @@ export default class App extends Component {
               setIsDarkMode={this.setIsDarkMode}
               isDarkMode={this.state.isDarkMode}
             />
-            <Home setPage={this.setPage} currentPage={this.state.currentPage} />          
+            <Home setPage={this.setPage} currentPage={this.state.currentPage} />
             <Footer />
           </div>
         </>
