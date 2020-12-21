@@ -5,6 +5,7 @@ import msnmtdb from "../assets/msnmtdb.jpg";
 import coffeeapp from "../assets/coffeeapp.jpg";
 import passwordGenerator from "../assets/passwordGenerator.jpg";
 import Project from "../components/Project";
+import chuckNorris from "../assets/ChuckNorris.png";
 export default class Projects extends Component {
   render() {
     return (
@@ -55,6 +56,15 @@ export default class Projects extends Component {
             githubLink="https://github.com/nisozakuto/password-generator"
             githubLinkA="github.com/nisozakuto/password-generator"
             visitPage="https://z-password-generator.netlify.app"
+          />
+          <Project
+            imageSrc={chuckNorris}
+            alt="A fun app created using Chuck Norris API"
+            title="Chuck Norris API page"
+            text="A free API to use, I wanted to take the opportunity and implement a few things I haven't used in the past"
+            githubLink="https://github.com/nisozakuto/chuck-norris"
+            githubLinkA="github.com/nisozakuto/chuck-norris"
+            visitPage=""
           />
         </ul>
       </section>

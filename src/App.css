@@ -190,7 +190,7 @@ body {
 main {
   display: flex;
   flex-grow: 1;
-  margin: 0 10vw;
+  /* margin: 0 10vw; */
 }
 
 /* MAIN END */
@@ -312,10 +312,10 @@ h3 {
 }
 
 section aside {
-  flex-grow: 2;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  /* flex-grow: 2; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
 }
 
 section article {
@@ -378,7 +378,8 @@ section {
 
 .projects-section {
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.1);
+  padding: 1% 1% 4% 1%;
+  background-color: rgb(255,255,255,0.8);
 }
 
 .projects-section h1 {
@@ -392,6 +393,9 @@ section {
   margin: 10px;
   color: black;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-box article {
