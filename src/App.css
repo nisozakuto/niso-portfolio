@@ -138,7 +138,6 @@ button {
   background: none;
   border: 0;
   color: inherit;
-  /* cursor: default; */
   font: inherit;
   line-height: normal;
   overflow: visible;
@@ -177,7 +176,7 @@ body {
   content: "";
   background: url("./assets/css-background.png");
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -190,7 +189,6 @@ body {
 main {
   display: flex;
   flex-grow: 1;
-  /* margin: 0 10vw; */
 }
 
 /* MAIN END */
@@ -205,7 +203,6 @@ main {
 
 .home-page-section article {
   margin: 25px 0;
-  background-color: white;
 }
 
 .homepage-button {
@@ -311,13 +308,6 @@ h3 {
   justify-content: space-around;
 }
 
-section aside {
-  /* flex-grow: 2; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-}
-
 section article {
   display: flex;
   flex-direction: column;
@@ -379,7 +369,6 @@ section {
 .projects-section {
   width: 100%;
   padding: 1% 1% 4% 1%;
-  background-color: rgb(255,255,255,0.8);
 }
 
 .projects-section h1 {
