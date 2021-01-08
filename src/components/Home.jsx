@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBreadSlice,
+  faCode,
+  faCoffee,
+} from "@fortawesome/free-solid-svg-icons";
+
+const element = <FontAwesomeIcon icon={faCode} />;
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -20,9 +28,13 @@ export default class Home extends Component {
           <section className="home-page-section">
             <article>
               <h1>
-                Hello! My name is <span>Niso.</span>
+                {element} Hello! {element}
               </h1>
-              <h3>I am a full stack Software Engineer and Web developer</h3>
+
+              <h3>
+                My name is <span>Niso.</span>
+                <br />I am a full stack Software Engineer and Web developer
+              </h3>
             </article>
 
             <article>
@@ -32,6 +44,7 @@ export default class Home extends Component {
               >
                 Learn more
               </button>
+              <FontAwesomeIcon icon="coffee" border />
             </article>
           </section>
         ) : this.props.currentPage === "About" ? (

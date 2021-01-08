@@ -228,6 +228,11 @@ main {
   line-height: 1.5em;
 }
 
+.home-page-section h1{
+    margin:20px 0;
+    animation: MoveUpDown 4s linear infinite alternate;
+}
+
 p {
   font-size: 1.3em;
   line-height: 1.5em;
@@ -463,5 +468,14 @@ section {
 
   .home-page-section {
     flex-direction: column;
+  }
+}
+
+@keyframes MoveUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(18px);
   }
 }
