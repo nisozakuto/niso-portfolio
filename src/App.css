@@ -193,7 +193,7 @@ main {
 
 /* MAIN END */
 
-.home-page-section {
+.home-page-section, .contact-page-section{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,6 @@ main {
 .homepage-button:hover {
   background-color: silver;
 }
-
 
 .home-page-section h1 {
   line-height: 1.5em;
