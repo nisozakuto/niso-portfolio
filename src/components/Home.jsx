@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBreadSlice,
-  faCode,
-  faCoffee,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const element = <FontAwesomeIcon icon={faCode} />;
 export default class Home extends Component {
